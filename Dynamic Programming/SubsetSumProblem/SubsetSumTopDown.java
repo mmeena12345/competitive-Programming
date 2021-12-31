@@ -2,7 +2,7 @@ class Solution{
    static Boolean isSubsetSum(int N, int arr[], int sum){
      Boolean dp[][] = new Boolean[N+1][sum+1];
      
-     for(int i=0;i<=n;i++){
+     for(int i=0;i<=N;i++){
       dp[i][0]=true;
      }
      
@@ -20,6 +20,6 @@ class Solution{
       }
      }
      
-     return dp[n][sum];
+     return dp[N][sum];
    }
 }
